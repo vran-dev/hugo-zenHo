@@ -13,7 +13,7 @@
   padding: 15px 10px;
   overflow: auto;
   font-size: 13px;
-  color: #4d4d4c;
+  color: #4d4d4c !important;
   line-height: 1.5;
 }
 

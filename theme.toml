@@ -4,9 +4,9 @@
 name = "ZenHo"
 license = "APACHE"
 licenselink = "https://github.com/vran-dev/ZenHo/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
-tags = []
+description = "a pretty simple & nice theme for Hugo"
+homepage = "github.com/vran-dev/hugo-zenHo"
+tags = ["clean", "light", "simple", "white", "blog"]
 features = []
 title = "ZenHo"
 min_version = "0.1.0"
@@ -34,3 +34,7 @@ min_version = "0.1.0"
   name = ""
   homepage = ""
   repo = ""
+
+[markup]
+  [markup.highlight]
+    style = "xcode"
