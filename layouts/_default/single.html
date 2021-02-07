@@ -1,0 +1,48 @@
+{{ partial "head.html" . }}
+
+<body>
+    <section id="single" class="wrapper">
+    {{ partial "nav.html" . }}
+
+        <article class = "post">
+            <header>
+                <div class = "post-img">
+                    {{ if (isset .Params "figure") }}<img src='{{ .Params.figure | default "" }}' alt="" />{{ end }}
+                </div>
+                <div class = title>
+                    {{ .Title }}
+                </div>
+                <div class="meta">
+                {{ .Date.Format "2006/01/02" }}
+                · {{ .Site.Params.author }}
+                </div>
+            </header>
+            <div class = "line"></div>
+            {{ if .Site.Params.enableToc }}
+                {{ if .TableOfContents }}
+                <div class="toc">
+                    {{ .TableOfContents }}
+                </div>
+                {{ end }}
+            {{ end }}
+            <section class="content">
+                {{ .Content }}
+            </section>
+
+            <div class="over">
+                <div class="line"></div>
+                <span>over</span>
+                <div class="line"></div>
+            </div>
+        </article>
+
+        {{ if .Site.Params.enableUtteranc }}
+        <div>
+            {{ partial "utteranc.html" . }}
+        </div>
+        {{ end }}
+
+    </section>
+    {{ partial "footer.html" . }}
+
+</body>

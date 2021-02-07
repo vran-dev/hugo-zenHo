@@ -1,0 +1,63 @@
+<div>
+    <div class = "posts">
+        {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
+        {{ $url := replace .Permalink .Site.BaseURL "" }}
+            {{ if ne $url "about/" }}
+    
+        <div class = "post">
+                <div class = "time">
+                    <div class="month">{{ .Date.Format "Jan 2" }}</div>
+                    <div class="year">{{ .Date.Format "2006" }}</div>
+                </div>
+        
+        
+                <div class = "meta">
+                    <div class = "title">
+                        <a href = '{{ .Permalink }}'>{{ .Title }}</a>
+                    </div>
+    
+                    {{ if .Site.Params.enableSummary }}
+                            {{ if .Site.Params.useDescriptionReplaceSummary }}
+                                <div class = "description">{{ .Description | plainify }}</div>
+                            {{ else }}
+                                <div class = "description">
+                                    {{ .Summary | plainify | htmlUnescape }}
+                                </div>
+                            {{ end }}
+                    {{ end }}
+
+                    <div>
+                        {{ with .Params.tags }}
+                        <svg t="1612688204938"  style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2750" data-spm-anchor-id="a313x.7781069.0.i2"><path d="M622.933333 708.266667 819.2 512 622.933333 315.733333 682.666667 256 938.666667 512 682.666667 768 622.933333 708.266667M401.066667 708.266667 204.8 512 401.066667 315.733333 341.333333 256 85.333333 512 341.333333 768 401.066667 708.266667Z" p-id="2751" data-spm-anchor-id="a313x.7781069.0.i0" fill="#8a8a8a"></path></svg>
+                            {{ range . }}
+                             <span class="tag">
+                                <a href='{{ "tags" | absURL }}{{ . | urlize }}'>{{ . }}</a>
+                            </span>
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+                <!-- TODO support tags -->
+        </div>
+                {{ end }}
+        {{ end }}
+    </div>
+    <div class = "pagination">
+        {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+        {{ if .Paginator.HasPrev }}
+        <span class="prev">
+            <a href="{{.Paginator.Prev.URL}}">
+                <span>←</span> {{ with .Site.Params.newerPosts }}{{ . }}{{ else }}Prev{{ end }}
+            </a>
+        </span>
+        {{ end }}
+        {{ if .Paginator.HasNext }}
+        <span class="next">
+            <a href="{{.Paginator.Next.URL}}">
+                {{ with .Site.Params.olderPosts }}{{ . }}{{ else }}Next{{ end }} <span>→</span>
+            </a>
+        </span>
+        {{ end }}
+    {{ end }}
+    </div>
+</div>

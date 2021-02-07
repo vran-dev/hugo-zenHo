@@ -1,0 +1,641 @@
+/* animation */
+@-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-3px);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+}
+  
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-3px);
+                transform: translateY(-3px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+.wrapper > * {    
+    animation: fadeInDown;/*动画名称*/  
+    animation-duration: 1s;/*动画持续时间*/  
+    -webkit-animation:fadeInDown 1s;/*针对webkit内核*/  
+}  
+
+/* font style */
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../fonts/Roboto-Light.ttf") format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../fonts/Roboto-Black.ttf") format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.ttf") format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Black.ttf") format('truetype');
+    font-weight: bold;
+}
+
+
+body {
+    font-family: Roboto-Regular, Athelas,STHeiti,Microsoft Yahei,serif;
+    font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    font-size:18px;
+    color: #666;
+    background-color: #f7f7f7;
+    padding: 0px;
+}
+
+
+/* markdown custom*/
+a {
+    color: rgb(148, 8, 17);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+h2 {
+    font-size: 1.7em;
+    color: rgb(73, 73, 73);
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: rgb(73, 73, 73);
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.3em;
+    color: rgb(73, 73, 73);
+    font-weight: 400;
+}
+
+b, strong {
+    font-weight: 500;
+    color: #1E2025;
+}
+
+blockquote {
+    padding-left: 15px;     
+    border-left: 3px solid rgb(22, 22, 22);
+    margin-inline-start: 20px;
+    margin-inline-end: 10px;
+}
+
+
+blockquote p {
+    quotes: none;
+    color: rgb(107, 107, 107);
+}
+
+table {
+    width: 100%;
+    margin: 40px 0;
+    border-collapse: collapse;
+    font-size: 13px;
+    line-height: 1.5em;
+    border-spacing: 0;
+}
+
+thead th {
+    text-align: left;
+    padding: 10px 15px;
+    height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #444;
+    border-bottom: 1px solid #dadadc;
+    cursor: default;
+    white-space: nowrap;
+}
+
+table td, td {
+    border-spacing: none;
+    border-style: solid;
+    padding: 10px 15px;
+    border-width: 1px 0 0 0;
+}
+
+tr>td {
+    border-top: 1px solid #eaeaea;
+}
+
+tr:nth-child(odd)>td {
+    background: #fcfcfc;
+}
+
+ol li {
+    margin-left: 0.3em;
+    margin: 3px auto;
+}
+
+
+/* post-list */
+.posts {
+    padding: 20px;
+}
+
+.posts .post .meta .title a {
+    color: #000;
+    /* color: rgb(56, 56, 56); */
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.posts .post .meta .title a:hover {
+    color:red;
+}
+
+.posts .post .meta .description {
+    color: #B9B9B9;
+    font-size: 13px;
+}
+
+.posts .post .tag a {
+    font-size: 12px;
+    margin: 0px auto;
+    margin-right: 5px;
+    color: rgb(114, 114, 114) !important;
+}
+
+.wrapper .pagination {
+    margin-top: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.wrapper .pagination .prev {
+    margin-right: 2em;
+}
+
+.wrapper .pagination a{
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.wrapper .pagination a:hover{
+    color: red;
+}
+
+
+/* post content */
+
+#single {
+    font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-feature-settings: "tnum";
+    font-variant: tabular-nums;
+}
+
+#single .post .title {
+    text-align: center;
+    font-size: 26px;
+    padding: 3px;
+    margin-top:22px;
+}
+#single .post .content {
+    padding:25px;
+}
+
+
+#single .post .meta {
+    text-align:center;
+    padding:15px;
+    color:#808080;
+    font-size: 14px;
+}
+
+#single .post .over {
+    display: flex;
+    margin: 10px auto;
+    color: rgb(78, 78, 78);
+}
+
+#single .post .over span {
+    margin: 0px 15px 0px 15px;
+    color: rgb(145, 145, 145);
+    font-weight: 200;
+}
+
+#single .over .line {
+    background-color: #ddd;
+    height: 1px;
+    width: 80%;
+    margin-top: 15px;
+}
+
+#single .post .post-img {
+    max-width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    max-height: 360px;
+    margin-bottom: 8px;
+}
+
+#single .post .post-img img {
+    max-width: 80%;
+    max-height: 360px;
+}
+
+/* arhive */
+.archive {
+    padding: 10px 5px 5px 20px;
+    font: 16px/2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    z-index: 100;
+}
+
+.archive .archive-item {
+    display: flex;
+    margin-top: 5px;
+}
+
+.archive-item .time {
+    color: rgb(151, 151, 151);
+    min-width: 60px;
+    display: inline-block;
+}
+
+.archive-item .title {
+    text-align: left;
+    margin-left: 1.3em;
+    color: #575757;
+    font-weight: 300;
+    transition: all 0.15s ease;
+}
+
+.archive-item .title a {
+    text-align: left;
+    color: #575757;
+}
+
+/* tags */
+.tags {
+    padding: 33px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+ }
+
+ .tags ul {
+    margin: 0;
+    padding: 0;
+ }
+
+ .tags ul li {
+    list-style-type: none;
+    margin: 10px 15px;
+    display: inline-block;
+    font-size: 1.2em;
+    list-style-position: outside;
+    color: #8a8a8a;
+ }
+
+ .tags ul li a {
+    color: #6d6d6d;
+    font-weight: 300;
+ }
+
+/* footer */
+#footer {
+    text-align: center;
+    color:rgb(102, 102, 102);
+    font-size: 13px;
+    margin-bottom: 0;
+}
+#footer a {
+    opacity: 0.9;
+    color:rgb(102, 102, 102) !important;
+    text-decoration: underline !important;
+}
+
+#footer a:hover {
+    opacity: 1;
+    color:#000 !important;
+    text-decoration: underline !important;
+}
+
+
+/* nav-main */
+
+.nav-main img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: transparent;
+    vertical-align: middle;
+}
+
+
+.nav-main a {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    margin-left: 1.2em;
+    font-size: 13px;
+}
+
+.nav-main a:hover {
+    color:red
+}
+
+@media screen and (min-width: 720px) {
+    .wrapper {
+        background-color: #FFF;
+        margin:22px auto;
+        max-width: 950px;
+        padding: 20px;
+        box-shadow: 0 10px 20px 0 rgb(236 236 236 / 86%);
+    }
+
+    .nav-main {
+        position: sticky;
+        top: 0;
+        height: 56px;
+        max-width: 950px;
+        padding: 5px 10px 5px 10px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+        opacity: 0.8;
+        background-color: #FFF;
+        z-index: 1000;
+
+        font-family: 'Roboto-Light';
+        font-size: 16px;
+        text-align: right;
+        line-height: 56px;
+        vertical-align: middle;
+    }
+
+    /* post-list */
+    .posts .post {
+        width: 70%;
+        margin-left: 13%;
+        margin-top: 18px;
+        display: flex;
+        padding: 10px;
+    }
+    
+    .posts .post .time {
+        margin:0px 16px auto;
+        min-width: 60px;
+    }
+    
+    .posts .post .time .month {
+        font-size: 13px;
+        color: #797979;
+        text-align: center;
+        margin: 15px auto;
+        font-family: 'Roboto-Light';
+    }
+    
+    .posts .post .time .year {
+        font-size: 13px;
+        color: #797979;
+        text-align: center;
+        margin-top: 5px;
+        font-family: 'Roboto-Light';
+    }
+    
+    .posts .post .meta .title {
+        font-size: 22px;
+        margin: 10px auto;
+        font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    
+
+    /* archive */
+    .archive {
+        padding: 10px 15px 5px 20px;
+        font: 16px/2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .about-content {
+        min-height:60vh;
+        padding:20px;
+    }
+
+}
+
+
+@media screen and (max-width: 720px) {
+    .wrapper {
+        background-color: #FFF;
+        width: 100%;
+        max-width: 100%;
+        margin:0;
+        box-shadow: 0 10px 20px 0 rgb(236 236 236 / 86%);
+    }
+
+    .nav-main {
+        position: sticky;
+        top: 0;
+        height: 56px;
+        width: 99%;
+        margin-bottom: 3px;
+
+        opacity: 0.8;
+        background-color: #FFF;
+        z-index: 1000;
+
+        font-family: 'Roboto-Light';
+        font-size: 14px;
+        text-align: right;
+        line-height: 56px;
+        vertical-align: middle;
+    }
+
+    /* post-list */
+    .posts .post {
+        width: 90%;
+        margin-top: 28px;
+        display: flex;
+        padding: 6px;
+    }
+    
+    .posts .post .time {
+        margin:10px 16px auto;
+        min-width: 60px;
+    }
+    
+    .posts .post .time .month {
+        font-size: 10px;
+        color: #797979;
+        text-align: center;
+        font-family: 'Roboto-Light';
+    }
+    
+    .posts .post .time .year {
+        font-size: 10px;
+        color: #797979;
+        text-align: center;
+        margin-top: 5px;
+        font-family: 'Roboto-Light';
+    }
+    
+    .posts .post .meta .title {
+        font-size: 16px;
+        margin: 10px auto;
+        font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    .home-header {
+        position: relative;
+    }
+
+    .home-image img {
+        width: 100%;
+        opacity: 0.7;
+    }
+
+
+    /* post content */
+    #single .post .title {
+        text-align: center;
+        font-size: 22px;
+        padding: 3px 8px 3px 8px;
+        margin-top: 22px;
+    }
+
+    h2 {
+        font-size: 26px;
+        color: rgb(73, 73, 73);
+        font-weight: 400;
+    }
+    
+    h3 {
+        font-size: 1.3em;
+        color: rgb(73, 73, 73);
+        font-weight: 400;
+    }
+    
+    h4 {
+        font-size: 1.1em;
+        color: rgb(73, 73, 73);
+        font-weight: 400;
+    }
+}
+
+/* profile */
+
+.line {
+    height:1px;
+    width: 80%;
+    margin: 0 auto;
+    background-color:rgb(187, 187, 187);
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 720px) {
+    .profile {
+        width: 80%;
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        margin:0 auto;
+        margin-top:33px;
+    }
+
+    .profile .avator {
+        vertical-align: middle;
+        text-align: center;
+        margin-left: 88px;
+    }
+
+    .profile .avator img {
+        max-width: 77px;
+        max-height: 77px;
+        border-radius: 90%;
+        border-color: rgb(187, 187, 187);
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .profile .bio {
+        margin-left: 50px;
+        width: 100%;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    .profile .bio h2 {
+        font-size:20px;
+        margin:0 auto;
+    }
+
+    .profile .bio p {
+        font-size: 14px;
+        color: rgb(116, 116, 116);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .profile {
+        width: 84%;
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .profile .avator {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .profile .avator img {
+        max-width: 66px;
+        max-height: 66px;
+        border-radius: 90%;
+        border-color:  rgb(187, 187, 187);
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .profile .bio {
+        margin-left: 20px;
+        width: 100%;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .profile .bio h2 {
+        font-size: 18px;
+        margin:0 auto;
+    }
+
+    .profile .bio p {
+        font-size: 12px;
+        color: rgb(116, 116, 116);
+    }
+}

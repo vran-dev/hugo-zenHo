@@ -1,0 +1,29 @@
+{{ partial "head.html" . }}
+	<body>
+
+	<section class="wrapper">
+		{{ partial "nav.html" . }}
+
+		{{ partial "profile.html" . }}
+
+		{{ range .Data.Pages.GroupByDate "2006" }}
+		
+		<div class="archive">
+			<h3>{{ .Key }}</h3>
+			<ul>
+                    {{ range .Pages }}
+                    <div class="archive-item">
+                            <div class = "time">{{ .Date.Format "Jan 2" }}</div>
+                            <div class = "title">
+                                <a class = "" href="{{ .Permalink }}"> {{ .Title }} </a>
+                            </div>
+                    </div>
+					{{ end }}
+			</ul>
+		</div>
+		{{ end }}
+	</section>
+	{{ partial "footer.html" . }}
+
+	</body>
+</html>

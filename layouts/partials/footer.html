@@ -1,0 +1,10 @@
+<footer id="footer">
+    <p>
+        {{ with .Site.Params.copyright }}
+            {{ . | markdownify }}
+        {{ else }}
+        © {{ now.Format "2006"}} <i></i> {{ .Site.Params.Author }}
+        {{ end }}
+        ∘ Powered by <a href="http://www.gohugo.io/">Hugo</a>  ∘  Theme <a href="https://github.com/vran-dev/ZenHo">ZenHo</a>
+    </p>
+</footer>
