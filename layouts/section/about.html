@@ -2,8 +2,10 @@
 <body>
 
     <div class="wrapper">  
-    {{ partial "nav.html" . }}
-
+        {{ partial "nav.html" . }}
+        
+        {{ partial "profile.html" . }}
+        
         <div class="about-content">
             {{ .Content }}
         </div>

@@ -264,6 +264,17 @@ ol li {
     max-height: 360px;
 }
 
+#single img {
+    max-width: 100%;
+}
+
+.about-content img {
+    max-width: 90%;
+    margin:0 auto;
+    margin-left:5%;
+    
+}
+
 /* arhive */
 .archive {
     padding: 10px 5px 5px 20px;
@@ -440,7 +451,6 @@ ol li {
     }
 
     .about-content {
-        min-height:60vh;
         padding:20px;
     }
 

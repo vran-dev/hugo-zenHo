@@ -31,7 +31,7 @@
                         <svg t="1612688204938"  style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2750" data-spm-anchor-id="a313x.7781069.0.i2"><path d="M622.933333 708.266667 819.2 512 622.933333 315.733333 682.666667 256 938.666667 512 682.666667 768 622.933333 708.266667M401.066667 708.266667 204.8 512 401.066667 315.733333 341.333333 256 85.333333 512 341.333333 768 401.066667 708.266667Z" p-id="2751" data-spm-anchor-id="a313x.7781069.0.i0" fill="#8a8a8a"></path></svg>
                             {{ range . }}
                              <span class="tag">
-                                <a href='{{ "tags" | absURL }}{{ . | urlize }}'>{{ . }}</a>
+                                <a href='{{ "tags/" | absURL }}{{ . | urlize }}'>{{ . }}</a>
                             </span>
                             {{ end }}
                         {{ end }}
