@@ -1,0 +1,32 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "ZenHo"
+theme = "hugo-zenHo"
+paginate = 6
+enableEmoji = true
+[params]
+    enableUtteranc = false 
+    enableSummary = true
+    useDescriptionReplaceSummary = true
+    author  = "vran"
+    bio = "All good things come to thos who wait."
+
+    [params.utteranc]
+        repo="username/repository-name"
+        theme="github-light"
+        crossorigin="anonymous"
+        issueTerm="pathname"
+        label="Comment"
+
+
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.asciidocExt]
+    backend = "html5"
+  [markup.highlight]
+    style = "xcode"
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
