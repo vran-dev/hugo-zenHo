@@ -333,6 +333,12 @@ ol li {
     color: #6d6d6d;
     font-weight: 300;
  }
+.tags ul li:hover {
+    transform: scale(1.2); 
+}
+ .tags ul li a:hover {
+    color: rgb(216, 102, 102);
+ }
 
 /* footer */
 #footer {
