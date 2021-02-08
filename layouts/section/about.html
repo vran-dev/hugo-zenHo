@@ -9,7 +9,12 @@
         <div class="about-content">
             {{ .Content }}
         </div>
+        
+        {{ partial "social.html" . }}
+        
     </div>
+    
+
     {{ partial "footer.html" . }}
 
 </body>

@@ -187,8 +187,9 @@ ol li {
 
 .wrapper .pagination {
     margin-top: 2em;
-    text-align: center;
+    text-align: right;
     margin-bottom: 2em;
+    padding-right: 66px;
 }
 
 .wrapper .pagination .prev {
@@ -355,6 +356,23 @@ ol li {
 
 /* nav-main */
 
+.social {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+}
+
+.social a {
+    margin-right: 22px;
+    margin-bottom: 16px;
+}
+
+.social .social-icon:hover {
+     transform: scale(1.2); 
+}
+
 .nav-main img {
     width: 33px;
     height: 33px;
@@ -369,7 +387,7 @@ ol li {
     color: #000;
     text-decoration: none;
     background-color: transparent;
-    margin-left: 1.2em;
+    margin-right: 1.2em;
     font-size: 13px;
 }
 
@@ -472,6 +490,7 @@ ol li {
         height: 56px;
         width: 99%;
         margin-bottom: 3px;
+        margin-right: 10px;
 
         opacity: 0.8;
         background-color: #FFF;
@@ -588,6 +607,10 @@ ol li {
         border-color: rgb(187, 187, 187);
         border-width: 1px;
         border-style: solid;
+    }
+
+    .profile .avator img:hover {
+        transform: scale(1.1); 
     }
 
     .profile .bio {

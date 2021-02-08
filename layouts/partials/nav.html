@@ -1,31 +1,13 @@
-<!-- <nav class="nav-main">
-    <ul>
-        <li> <a href=""><img src="{{ .Site.Params.avator }}" alt="avator"/></a></li>
-        <li> {{ $url := replace .Permalink .Site.BaseURL "" }}
-            {{ if not .IsHome }}
-                <a href='{{ .Site.BaseURL }}'> {{ with .Site.Params.home }}{{ . }}{{ else }}Home{{ end }}</a>
-            {{ end }} </li>
-        <li> <a href='{{ .Site.BaseURL }}posts'>{{ with .Site.Params.archive }}{{ . }}{{ else }}Archive{{ end }}</a> </li>
-        <li> <a href='{{ .Site.BaseURL }}tags'>{{ with .Site.Params.tags }}{{ . }}{{ else }}Tags{{ end }}</a> </li>
-        <li> <a href='{{ .Site.BaseURL }}about'>{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a> </li>
-
-        {{ range $key, $val := .Site.Params.Links }}
-		<li><a href="{{ $val }}">{{ $key }}</a></li>
-	    {{ end }}
-    </ul>
-
-</nav> -->
-
-
-<nav class="nav-main">
-         {{ $url := replace .Permalink .Site.BaseURL "" }}
-         <a href='{{ .Site.BaseURL }}'> {{ with .Site.Params.home }}{{ . }}{{ else }}Home{{ end }}</a>
-         <a href='{{ .Site.BaseURL }}posts'>{{ with .Site.Params.archive }}{{ . }}{{ else }}Archive{{ end }}</a> 
-         <a href='{{ .Site.BaseURL }}tags'>{{ with .Site.Params.tags }}{{ . }}{{ else }}Tags{{ end }}</a> 
-         <a href='{{ .Site.BaseURL }}about'>{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
-
-        {{ range $key, $val := .Site.Params.Links }}
-		<a href="{{ $val }}">{{ $key }}</a>
-        {{ end }}
-        
+<nav class="nav-main" style="display: flex;">
+         <div style="margin-left:auto;">
+            {{ $url := replace .Permalink .Site.BaseURL "" }}
+            <a href='{{ .Site.BaseURL }}'> {{ with .Site.Params.home }}{{ . }}{{ else }}Home{{ end }}</a>
+            <a href='{{ .Site.BaseURL }}posts'>{{ with .Site.Params.archive }}{{ . }}{{ else }}Archive{{ end }}</a> 
+            <a href='{{ .Site.BaseURL }}tags'>{{ with .Site.Params.tags }}{{ . }}{{ else }}Tags{{ end }}</a> 
+            <a href='{{ .Site.BaseURL }}about'>{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
+   
+           {{ range $key, $val := .Site.Params.Links }}
+           <a href="{{ $val }}">{{ $key }}</a>
+           {{ end }}
+         </div>
 </nav>

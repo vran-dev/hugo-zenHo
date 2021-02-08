@@ -35,7 +35,8 @@
                 <div class="line"></div>
             </div>
         </article>
-
+        {{ partial "social.html" . }}
+        
         {{ if .Site.Params.enableUtteranc }}
         <div>
             {{ partial "utteranc.html" . }}
@@ -43,6 +44,7 @@
         {{ end }}
 
     </section>
+
     {{ partial "footer.html" . }}
 
 </body>
