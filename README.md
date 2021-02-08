@@ -1,6 +1,8 @@
 
 
-![](release/img/logo.jpg)
+<p align="center">
+    <img src="release/img/logo.jpg">
+</p>
 
 ## Languange
 
@@ -21,7 +23,7 @@ English | [中文 TODO](#)
 - [ ] Disqus support
 - [ ] Google Analytics  / Baidu Analytics supp ort
 - [ ] Table of Content
-- [ ] Social card list
+- [x] Social card list
 - [x] support  utteranc 
 
 
@@ -49,8 +51,11 @@ paginate = 6
     useDescriptionReplaceSummary = true
     author  = "vran"
     bio = "Your bio。"
-    
-		enableUtteranc = true
+    enableUtteranc = true
+    # social page url
+    github = "#"
+    twitter = "#"
+    facebook = "#"
     [params.utteranc]
         repo="username/github-page-repository"
         theme="github-light"
@@ -65,13 +70,13 @@ paginate = 6
 
 - Home
 
-  ![](release/img/home.jpg)
+  ![](release/img/home.png)
 
 
 
-- content
+- post
 
-  ![](release/img/content-1.jpg)
+  ![](release/img/post.png)
 
   
 
@@ -93,4 +98,4 @@ paginate = 6
 
 - About
 
-  ![](release/img/about.jpg)
+  ![](release/img/about.png)
