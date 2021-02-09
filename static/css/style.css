@@ -113,6 +113,11 @@ blockquote {
 blockquote p {
     quotes: none;
     color: rgb(107, 107, 107);
+    overflow-wrap: break-word;
+}
+
+p {
+    overflow-wrap: break-word;
 }
 
 table {
@@ -122,11 +127,12 @@ table {
     font-size: 13px;
     line-height: 1.5em;
     border-spacing: 0;
+    overflow: auto;
+    display: block;
 }
 
 thead th {
     text-align: left;
-    padding: 10px 15px;
     height: 20px;
     font-size: 13px;
     font-weight: bold;
@@ -154,6 +160,7 @@ tr:nth-child(odd)>td {
 ol li {
     margin-left: 0.3em;
     margin: 3px auto;
+    overflow-wrap: break-word;
 }
 
 

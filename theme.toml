@@ -17,6 +17,7 @@ min_version = "0.1.0"
 
 [params]
     enableUtteranc = false
+    enableToc = false
     enableSummary = true
     useDescriptionReplaceSummary = true
     author  = "ZenHo"
@@ -45,3 +46,7 @@ min_version = "0.1.0"
 [markup]
   [markup.highlight]
     style = "xcode"
+  [markup.tableOfContents]
+    endLevel = 2
+    ordered = false
+    startLevel = 2
