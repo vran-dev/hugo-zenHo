@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://example.com"
 languageCode = "en-us"
 title = "ZenHo"
 theme = "hugo-zenHo"
@@ -7,9 +7,14 @@ enableEmoji = true
 [params]
     enableUtteranc = false 
     enableSummary = true
+    enableToc = false
     useDescriptionReplaceSummary = true
     author  = "vran"
     bio = "All good things come to thos who wait."
+    github = "#"
+    twitter = "#"
+    facebook = "#"
+    email = "example@example.com"
 
     [params.utteranc]
         repo="username/repository-name"

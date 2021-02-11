@@ -22,7 +22,7 @@ English | [中文 TODO](#)
 
 - [ ] Disqus support
 - [ ] Google Analytics  / Baidu Analytics supp ort
-- [ ] Table of Content
+- [x] Table of Content
 - [x] Social card list
 - [x] support  utteranc 
 
@@ -56,12 +56,21 @@ paginate = 6
     github = "#"
     twitter = "#"
     facebook = "#"
+    email = ""
     [params.utteranc]
         repo="username/github-page-repository"
         theme="github-light"
         crossorigin="anonymous"
         issueTerm="pathname"
         label="Comment"
+
+[markup]
+  [markup.highlight]
+    style = "xcode"
+  [markup.tableOfContents]
+    endLevel = 2
+    ordered = false
+    startLevel = 2
 ```
 
 

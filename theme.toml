@@ -29,6 +29,8 @@ min_version = "0.1.0"
     twitter = "#"
     # facebook page url
     facebook = "#"
+    # email
+    email = "#"
 
     [params.utteranc]
         repo=""
