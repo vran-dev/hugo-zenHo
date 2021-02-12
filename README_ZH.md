@@ -6,45 +6,44 @@
 
 ## Languange
 
-English | [中文](README_ZH.md)
+[English](README.md) | 中文
 
 
 
 ## What
 
-**ZenHo** is a pretty simple & nice theme for [Hugo](https://gohugo.io/)
+**ZenHo** 是一个极简风格的  [Hugo](https://gohugo.io/) 主题
 
 > All good things come to thos who wait.
 
 
 
-### Features TODO
+### Features
 
-- [ ] Disqus support
-- [ ] Google Analytics  / Baidu Analytics supp ort
-- [x] Table of Content
-- [x] Social  list
-- [x] support  utteranc 
+- [ ] Disqus 评论插件
+- [ ] Google / Baidu 分析支持
+- [x] 文章目录
+- [x] utteranc  评论插件
 
 
 
 ## How to use
 
-Step 1 : 
+步骤一：
 
-​	If you know  [Hugo](https://gohugo.io/) for the first time,you need to learn  [official tutorial](https://gohugo.io/getting-started/quick-start/) first.
+​	如果你是第一次了解到 [Hugo](https://gohugo.io/) 的话，你需要先看一下官方的[入门教程](https://gohugo.io/getting-started/quick-start/)
 
-Step 2 : 
+步骤二：
 
-​	you can use  `hugo-zenHo/archetypes/default.md`  replace your blog's `archetypes/default.md` `
+​	你可能需要用 `hugo-zenHo/archetypes/default.md` 替换 Hugo 默认的 `archetypes/default.md` 文件
 
-Step 3 :  
+步骤三：
 
-​	If you want to custon your **about page**, you should create markdown file `content/about/_index.md`, then write it in markdown syntax.
+​	如果你要自定义 about 页面，需要创建  `content/about/_index.md` 文件， 然后以 markdown 格式书写内容即可 
 
-Step 4:
+步骤四：
 
-​	Copy [Configuration Override](##Configuration Override) content to your config.toml，for better highlight, you can use `xcode` style
+​	复制 [Configuration Override](##Configuration Override) 下的内容到你的 config.toml，为了更好的代码高亮展示，建议设置主题为 xcode
 
 ```toml	
 [markup]
@@ -54,7 +53,7 @@ Step 4:
 
 
 
-More info could be found at **exampleSite** directory.
+具体的实例可以参考 **exampleSite** 目录
 
 
 
@@ -130,3 +129,4 @@ paginate = 6
 - About
 
   ![](release/img/about.png)
+
