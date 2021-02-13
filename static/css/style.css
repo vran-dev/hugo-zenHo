@@ -418,7 +418,7 @@ ol li {
     .wrapper {
         background-color: #FFF;
         margin:22px auto;
-        max-width: 950px;
+        max-width: 850px;
         padding: 20px;
         box-shadow: 0 10px 20px 0 rgb(236 236 236 / 86%);
     }
@@ -445,8 +445,8 @@ ol li {
 
     /* post-list */
     .posts .post {
-        width: 70%;
-        margin-left: 13%;
+        width: 76%;
+        margin-left: 11%;
         margin-top: 18px;
         display: flex;
         padding: 10px;
