@@ -1,4 +1,23 @@
 
-<h3>
-    404 not found
-</h3>
+{{ partial "head.html" . }}
+
+<body>
+    <div class="wrapper">
+        {{ partial "nav.html" . }}
+
+
+        
+        <div class="not-found"  style="font-size: 6em;text-align: center;">
+            404
+        </div>
+        <div style="text-align: center; margin-bottom: 30px;">
+            This page is missing, you can go <a href="{{ .Site.BaseURL }}">home</a>
+
+            <img src="images/404.gif" alt="" style="max-width: 100%; max-height: 400px;">
+        </div>        
+
+        {{ partial "social.html" . }}    
+    </div>
+
+    {{ partial "footer.html" . }}
+</body>
