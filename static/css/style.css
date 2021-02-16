@@ -288,6 +288,7 @@ ol li {
     padding: 10px 5px 5px 20px;
     font: 16px/2 "Helvetica Neue", Helvetica, Arial, sans-serif;
     z-index: 100;
+    margin-left: 13%;
 }
 
 .archive .archive-item {
@@ -565,6 +566,14 @@ ol li {
         opacity: 0.7;
     }
 
+
+    .archive {
+        padding: 10px 5px 5px 20px;
+        font: 16px/2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        z-index: 100;
+        margin-left: 0;
+    }
+    
 
     /* post content */
     #single .post .title {
