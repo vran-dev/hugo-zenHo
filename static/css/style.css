@@ -30,7 +30,8 @@ a {
     background-image: linear-gradient(rgb(82, 82, 82), rgb(82, 82, 82));
     background-position: 50% 100%;
     background-repeat: no-repeat;
-    background-size: 0% 1px;
+    background-size: 0% 0px;
+    padding-bottom: 2px;
     transition: background-size .4s;
 }
 
@@ -336,6 +337,7 @@ ol li {
     font-size: 1.2em;
     list-style-position: outside;
     color: #8a8a8a;
+    transition: all 0.4s;
  }
 
  .tags ul li a {
@@ -346,7 +348,6 @@ ol li {
 
 .tags ul li:hover {
     transform: scale(1.2); 
-    transition: all 0.4s;
 }
 
  .tags ul li a:hover {
@@ -397,12 +398,14 @@ ol li {
 .social a::before {
     background: transparent !important;
     height: 0px;
-    transform: scale(1.0); 
+}
+
+.social .social-icon {
+    transition: all 0.4s;
 }
 
 .social .social-icon:hover {
      transform: scale(1.2); 
-     transition: all 0.4s;
 }
 
 .nav-main img {
@@ -495,7 +498,6 @@ ol li {
     }
 
     
-
     /* archive */
     .archive {
         padding: 10px 15px 5px 20px;
