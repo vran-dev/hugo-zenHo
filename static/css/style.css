@@ -25,6 +25,20 @@
     }
 }
 
+a {
+    text-decoration: none;
+    background-image: linear-gradient(rgb(82, 82, 82), rgb(82, 82, 82));
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .4s;
+}
+
+a:hover, a:focus {
+    background-size: 100% 1px;
+}
+
+
 .wrapper > * {    
     animation: fadeInDown;/*动画名称*/  
     animation-duration: 1s;/*动画持续时间*/  
@@ -73,10 +87,6 @@ body {
 a {
     color: rgb(148, 8, 17);
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration:underline;
 }
 
 h2 {
@@ -176,10 +186,6 @@ ol li {
     text-decoration: none;
 }
 
-.posts .post .meta .title a:hover {
-    color:red;
-}
-
 .posts .post .meta .description {
     color: #B9B9B9;
     font-size: 13px;
@@ -208,11 +214,6 @@ ol li {
     text-decoration: none;
     font-size: 20px;
 }
-
-.wrapper .pagination a:hover{
-    color: red;
-}
-
 
 /* post content */
 
@@ -341,11 +342,15 @@ ol li {
     color: #6d6d6d;
     font-weight: 300;
  }
+
+
 .tags ul li:hover {
     transform: scale(1.2); 
+    transition: all 0.4s;
 }
+
  .tags ul li a:hover {
-    color: rgb(216, 102, 102);
+     font-weight: 400;
  }
 
 /* footer */
@@ -359,6 +364,11 @@ ol li {
     opacity: 0.9;
     color:rgb(102, 102, 102) !important;
     text-decoration: underline !important;
+}
+
+#footer a::before {
+    background: transparent !important;
+    height: 0px;
 }
 
 #footer a:hover {
@@ -381,10 +391,18 @@ ol li {
 .social a {
     margin-right: 22px;
     margin-bottom: 16px;
+    background: transparent;
+}
+
+.social a::before {
+    background: transparent !important;
+    height: 0px;
+    transform: scale(1.0); 
 }
 
 .social .social-icon:hover {
      transform: scale(1.2); 
+     transition: all 0.4s;
 }
 
 .nav-main img {
@@ -403,10 +421,6 @@ ol li {
     background-color: transparent;
     margin-right: 1.2em;
     font-size: 13px;
-}
-
-.nav-main a:hover {
-    color:red
 }
 
 /* about */
