@@ -20,11 +20,11 @@
 
 ### Features
 
-- [ ] Disqus 评论插件
-- [ ] Google / Baidu 分析支持
+- [ ] Google 统计
+- [ ] disqus 评论插件
+- [x] Baidu 统计
 - [x] 文章目录
-- [x] utteranc  评论插件
-
+- [x] utteranc 评论插件
 
 
 ## How to use

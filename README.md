@@ -20,11 +20,12 @@ English | [中文](README_ZH.md)
 
 ### Features TODO
 
-- [ ] Disqus support
-- [ ] Google Analytics  / Baidu Analytics supp ort
+- [ ] Disqus comment
+- [ ] Google Analytics
+- [x] Baidu Analytics
 - [x] Table of Content
 - [x] Social  list
-- [x] support  utteranc 
+- [x] Utteranc comment
 
 
 
@@ -71,14 +72,23 @@ paginate = 6
 [params]
     enableSummary = true
     useDescriptionReplaceSummary = true
+    enableToc = false
+
     author  = "vran"
-    bio = "Your bio。"
-    enableUtteranc = true
+    bio = "All good things come to thos who wait."
+
+    # baidu analytics
+    enableBaiduAnalytics = false
+    baiduAnalyticsToken = ""
+
     # social page url
     github = "#"
     twitter = "#"
     facebook = "#"
     email = ""
+
+    # utteranc comment
+    enableUtteranc = false
     [params.utteranc]
         repo="username/github-page-repository"
         theme="github-light"

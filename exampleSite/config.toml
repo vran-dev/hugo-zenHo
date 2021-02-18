@@ -4,26 +4,31 @@ title = "ZenHo"
 theme = "hugo-zenHo"
 paginate = 6
 enableEmoji = true
+
 [params]
-    enableUtteranc = false 
-    enableSummary = true
     enableToc = false
+
+    enableBaiduAnalytics = false
+    baiduAnalyticsToken = ""
+
+    enableSummary = true
     useDescriptionReplaceSummary = true
+
     author  = "vran"
     bio = "All good things come to thos who wait."
+
     github = "#"
     twitter = "#"
     facebook = "#"
     email = "example@example.com"
 
+    enableUtteranc = false 
     [params.utteranc]
         repo="username/repository-name"
         theme="github-light"
         crossorigin="anonymous"
         issueTerm="pathname"
         label="Comment"
-
-
 
 [markup]
   defaultMarkdownHandler = "goldmark"
