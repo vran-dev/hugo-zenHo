@@ -18,6 +18,8 @@
 
 
 
+![screenshot](images/screenshot.png)
+
 ### Features
 
 - [ ] Google 统计
@@ -70,14 +72,23 @@ paginate = 6
 [params]
     enableSummary = true
     useDescriptionReplaceSummary = true
+    enableToc = false
+
     author  = "vran"
-    bio = "Your bio。"
-    enableUtteranc = true
+    bio = "All good things come to thos who wait."
+
+    # baidu analytics
+    enableBaiduAnalytics = false
+    baiduAnalyticsToken = ""
+
     # social page url
     github = "#"
     twitter = "#"
     facebook = "#"
     email = ""
+
+    # utteranc comment
+    enableUtteranc = false
     [params.utteranc]
         repo="username/github-page-repository"
         theme="github-light"
