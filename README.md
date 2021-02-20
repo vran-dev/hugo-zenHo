@@ -85,6 +85,8 @@ paginate = 6
     enableBaiduAnalytics = false
     baiduAnalyticsToken = ""
 
+    googleSiteVerificationToken = ""
+
     # social page url
     github = "#"
     twitter = "#"

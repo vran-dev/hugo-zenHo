@@ -11,6 +11,8 @@ enableEmoji = true
     enableBaiduAnalytics = false
     baiduAnalyticsToken = ""
 
+    googleSiteVerificationToken = ""
+
     enableSummary = true
     useDescriptionReplaceSummary = true
 
