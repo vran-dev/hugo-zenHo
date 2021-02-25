@@ -18,7 +18,7 @@
     
                     {{ if .Site.Params.enableSummary }}
                             {{ if .Site.Params.useDescriptionReplaceSummary }}
-                                <div class = "description">{{ .Description | plainify }}</div>
+                                <div class = "description">{{ .Description }}</div>
                             {{ else }}
                                 <div class = "description">
                                     {{ .Summary | plainify | htmlUnescape }}
