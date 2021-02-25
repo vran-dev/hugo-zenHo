@@ -651,6 +651,7 @@ ol li {
         border-color: rgb(187, 187, 187);
         border-width: 1px;
         border-style: solid;
+        transition: all 0.4s;
     }
 
     .profile .avator img:hover {
