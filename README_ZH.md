@@ -27,6 +27,7 @@
 - [x] Baidu 统计
 - [x] 文章目录
 - [x] utteranc 评论插件
+- [x] Github 项目卡片展示
 
 
 ## How to use
@@ -53,10 +54,25 @@
     style = "xcode"
 ```
 
-
-
 具体的实例可以参考 **exampleSite** 目录
 
+## Github project card
+
+ZenHo 使用 [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) 和 shortCode 实现了 Github 项目展示。
+
+![github-project-card](img/github-project.png)
+
+你可以使用以下代码在你的文章中以卡片的形式展示 Github 项目
+
+```html
+{{< github-project username="your github user name" repo="your github project name" >}}
+```
+
+比如
+
+```html
+{{< github-project username="vran-dev" repo="hugo-zenHo" >}}
+```
 
 
 ## Configuration Override

@@ -30,6 +30,7 @@ English | [中文](README_ZH.md)
 - [x] Table of Content
 - [x] Social  list
 - [x] Utteranc comment
+- [x] shortcode: github project card
 
 
 
@@ -57,11 +58,26 @@ Step 4:
     style = "xcode"
 ```
 
-
-
 More info could be found at **exampleSite** directory.
 
 
+## Github project card
+
+ZenHo use shortCode and [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) to implement Github Project card.
+
+![github-project-card](release/img/github-project.png)
+
+you can use the following code to show card in post
+
+```html
+{{< github-project username="your github user name" repo="your github project name" >}}
+```
+
+such as 
+
+```html
+{{< github-project username="vran-dev" repo="hugo-zenHo" >}}
+```
 
 ## Configuration Override
 
