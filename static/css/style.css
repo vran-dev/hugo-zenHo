@@ -123,23 +123,6 @@ a {
     text-decoration: none;
 }
 
-h2 {
-    font-size: 1.7em;
-    color: rgb(73, 73, 73);
-    font-weight: 400;
-}
-
-h3 {
-    font-size: 1.5em;
-    color: rgb(73, 73, 73);
-    font-weight: 400;
-}
-
-h4 {
-    font-size: 1.3em;
-    color: rgb(73, 73, 73);
-    font-weight: 400;
-}
 
 b, strong {
     font-weight: 550;
@@ -240,6 +223,13 @@ ol li {
     margin-left: 0.3em;
     margin: 3px auto;
     overflow-wrap: break-word;
+}
+
+code {
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 1em;
 }
 
 
@@ -664,24 +654,6 @@ ol li {
         font-size: 22px;
         padding: 3px 8px 3px 8px;
         margin-top: 22px;
-    }
-
-    h2 {
-        font-size: 26px;
-        color: rgb(73, 73, 73);
-        font-weight: 400;
-    }
-    
-    h3 {
-        font-size: 1.3em;
-        color: rgb(73, 73, 73);
-        font-weight: 400;
-    }
-    
-    h4 {
-        font-size: 1.1em;
-        color: rgb(73, 73, 73);
-        font-weight: 400;
     }
 }
 
