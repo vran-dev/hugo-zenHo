@@ -72,15 +72,48 @@ a:hover, a:focus {
     font-weight: bold;
 }
 
+/* open-sans-regular - latin-ext_latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../fonts/open-sans-v17-latin-ext_latin-regular.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* open-sans-italic - latin-ext_latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url('../fonts/open-sans-v17-latin-ext_latin-italic.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* open-sans-700 - latin-ext_latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/open-sans-v17-latin-ext_latin-700.woff2') format('woff2'); 
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* open-sans-700italic - latin-ext_latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('../fonts/open-sans-v17-latin-ext_latin-700italic.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 
 body {
-    font-family: Roboto-Regular, Athelas,STHeiti,Microsoft Yahei,serif;
-    font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.7;
-    font-size:18px;
     color: #666;
+    font-size: 16px;
     background-color: #f7f7f7;
     padding: 0px;
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -109,8 +142,8 @@ h4 {
 }
 
 b, strong {
-    font-weight: 500;
-    color: #1E2025;
+    font-weight: 550;
+    color: #161616;
 }
 
 blockquote {
@@ -129,6 +162,41 @@ blockquote p {
 
 p {
     overflow-wrap: break-word;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul,
+ol {
+    padding-left: 30px;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
 }
 
 table {
@@ -219,14 +287,13 @@ ol li {
 /* post content */
 
 #single {
-    font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
     font-feature-settings: "tnum";
     font-variant: tabular-nums;
 }
 
 #single .post .title {
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     padding: 3px;
     margin-top:22px;
 }
@@ -436,8 +503,8 @@ ol li {
     .wrapper {
         background-color: #FFF;
         margin:22px auto;
-        max-width: 850px;
-        padding: 20px;
+        max-width: 760px;
+        padding: 30px;
         box-shadow: 0 10px 20px 0 rgb(236 236 236 / 86%);
     }
 
@@ -465,7 +532,7 @@ ol li {
     .posts .post {
         width: 76%;
         margin-left: 11%;
-        margin-top: 18px;
+        margin-top: 14px;
         display: flex;
         padding: 10px;
     }
@@ -492,7 +559,7 @@ ol li {
     }
     
     .posts .post .meta .title {
-        font-size: 22px;
+        font-size: 20px;
         margin: 10px auto;
         font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     }
