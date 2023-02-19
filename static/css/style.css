@@ -25,21 +25,6 @@
     }
 }
 
-a {
-    text-decoration: none;
-    background-image: linear-gradient(rgb(82, 82, 82), rgb(82, 82, 82));
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 0px;
-    padding-bottom: 2px;
-    transition: background-size .4s;
-}
-
-a:hover, a:focus {
-    background-size: 100% 1px;
-}
-
-
 .wrapper > * {    
     animation: fadeInDown;/*动画名称*/  
     animation-duration: 1s;/*动画持续时间*/  
@@ -120,8 +105,14 @@ body {
 
 /* markdown custom*/
 a {
-    color: rgb(148, 8, 17);
+    border-bottom: 1px solid grey;
+    cursor: pointer;
     text-decoration: none;
+    color: #121212;
+}
+
+a:hover, a:focus {
+    color: #06f;
 }
 
 
@@ -243,9 +234,14 @@ code {
 
 .posts .post .meta .title a {
     color: #000;
-    /* color: rgb(56, 56, 56); */
     font-weight: 300;
     text-decoration: none;
+    border-bottom: none;
+}
+
+.posts .post .meta .title a:hover, 
+.posts .post .meta .title a:focus {
+    color: #06f;
 }
 
 .posts .post .meta .description {
@@ -473,6 +469,7 @@ code {
     margin-right: 22px;
     margin-bottom: 16px;
     background: transparent;
+    border-bottom: none;
 }
 
 .social a::before {
