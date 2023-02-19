@@ -107,13 +107,14 @@ a:hover, a:focus {
 
 
 body {
-    color: #666;
-    font-size: 16px;
-    background-color: #f7f7f7;
-    padding: 0px;
-    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  font-size: 16px;
+  text-align: start;
+  white-space: normal;
+  text-size-adjust: auto;
+  line-height: 1.75em;
 }
 
 
@@ -170,6 +171,7 @@ li p.first {
 ul,
 ol {
     padding-left: 30px;
+    color: #666;
 }
 
 ul:first-child,
@@ -223,13 +225,14 @@ ol li {
     margin-left: 0.3em;
     margin: 3px auto;
     overflow-wrap: break-word;
+    color: #666;
 }
 
 code {
     border-radius: 3px;
     padding: 0;
-    padding: 2px 4px 0px 4px;
     font-size: 1em;
+    color: rgb(232 47 24);
 }
 
 
@@ -287,6 +290,26 @@ code {
     padding: 3px;
     margin-top:22px;
 }
+
+
+#single .post .content h2 {
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-left: -10px;
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    background-color: rgb(33, 33, 34);
+    border-bottom-right-radius: 100px;
+    color: rgb(255, 255, 255);
+    padding-right: 30px;
+    padding-left: 30px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+
+
 #single .post .content {
     padding:25px;
 }
