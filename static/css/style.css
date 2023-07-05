@@ -99,9 +99,10 @@ body {
   text-align: start;
   white-space: normal;
   text-size-adjust: auto;
-  line-height: 1.75em;
+  line-height: 28.8px;
+  letter-spacing: 1.6px;
+  color: #030303;
 }
-
 
 /* markdown custom*/
 a {
@@ -118,7 +119,6 @@ a:hover, a:focus {
 
 b, strong {
     font-weight: 550;
-    color: #161616;
 }
 
 blockquote {
@@ -135,34 +135,17 @@ blockquote p {
     overflow-wrap: break-word;
 }
 
-p {
-    overflow-wrap: break-word;
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
 p,
 blockquote,
 ul,
 ol,
 dl,
 table{
-    margin: 0.8em 0;
-}
-
-li>ol,
-li>ul {
-    margin: 0 0;
+    margin-bottom: 20px;
 }
 
 li p.first {
     display: inline-block;
-}
-
-ul,
-ol {
-    padding-left: 30px;
-    color: #666;
 }
 
 ul:first-child,
@@ -213,10 +196,13 @@ tr:nth-child(odd)>td {
 }
 
 ol li {
-    margin-left: 0.3em;
-    margin: 3px auto;
+    margin-bottom: 10px;
     overflow-wrap: break-word;
-    color: #666;
+}
+
+ul li {
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
 }
 
 code {
@@ -303,7 +289,6 @@ code {
     line-height: 40px;
     font-size: 16px;
 }
-
 
 
 #single .post .content {
