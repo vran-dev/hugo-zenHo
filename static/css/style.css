@@ -119,6 +119,7 @@ a:hover, a:focus {
 
 b, strong {
     font-weight: 550;
+    color: #111827;
 }
 
 blockquote {
@@ -203,6 +204,10 @@ ol li {
 ul li {
     margin-bottom: 10px;
     overflow-wrap: break-word;
+}
+
+ul > li::marker {
+    color: #3c3c3c;
 }
 
 code {
