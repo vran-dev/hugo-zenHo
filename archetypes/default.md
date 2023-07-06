@@ -1,8 +1,8 @@
-+++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = {{ .Date }}
-tags = [""]
-draft = false
-description = ""
-figure = ""
-+++
+---
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
+date: {{ .Date }}
+tags: [""]
+draft: false
+description: ""
+figure: ""
+---
