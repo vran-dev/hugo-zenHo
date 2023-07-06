@@ -1,38 +1,4 @@
-/* animation */
-@-webkit-keyframes fadeInDown {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(-3px);
-    }
-
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-    }
-}
-  
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-3px);
-                transform: translateY(-3px);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-                transform: translateY(0);
-    }
-}
-
-.wrapper > * {    
-    animation: fadeInDown;/*动画名称*/  
-    animation-duration: 1s;/*动画持续时间*/  
-    -webkit-animation:fadeInDown 1s;/*针对webkit内核*/  
-}  
-
 /* font style */
-
 @font-face {
     font-family: "Roboto-Light";
     src: url("../fonts/Roboto-Light.ttf") format('truetype');
@@ -101,7 +67,7 @@ body {
   text-size-adjust: auto;
   line-height: 28.8px;
   letter-spacing: 1.6px;
-  color: #030303;
+  color: #434343;
 }
 
 /* markdown custom*/
@@ -244,7 +210,7 @@ code {
     font-size: 12px;
     margin: 0px auto;
     margin-right: 5px;
-    color: rgb(114, 114, 114) !important;
+    color: rgb(114, 114, 114);
 }
 
 .wrapper .pagination {
